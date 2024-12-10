@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ticketing System</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="main-container">
+    <div class="text-container">
+      <span>
+        <b>Sila masukkan nombor telefon anda untuk menerima notis tiket melalui SMS</b>
+      </span>
+      <span>
+        Please enter your mobile number to receive ticket notification via SMS
+      </span>
+    </div>
+    <div class="phone-container">
+      <div>
+        <div class="input-label">
+          <span>Kod panggilan negara</span>
+          <span>Country code</span>
+        </div>
+        <select id="countryCode" class="form-select">
+          <option value="Malaysia" selected>Malaysia</option>
+          <option value="Singapore">Singapore</option>
+        </select>
+      </div>
+      <div>
+        <div class="input-label">
+          <span>Nombor telefon</span>
+          <span>Mobile number</span>
+        </div>
+        <input type="tel" id="phoneNumber" class="form-control" placeholder="">
+        <div class="error-message">
+          <p class="error-text-primary " id="errorMessagePrimary"></p>
+          <p class="error-text-secondary" id="errorMessageSecondary"></p>
+        </div>
+      </div>
+    </div>
+    <button class="btn custom-button w-100" onclick="validateAndGoToScreen3()">
+      <span><b>Dapatkan tiket</b></span><br/>
+      <span>Get a ticket</span>
+    </button>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="scripts.js"></script>
+  
+</body>
+</html>
