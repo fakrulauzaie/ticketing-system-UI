@@ -1,5 +1,6 @@
 # ticketing-system-UI
 A simple UI/UX for ticketing system using pure JavaScript/JQuery, HTML, CSS, and Bootstrap.
+Focuses on the basics (pure Javascript, HTML, CSS, etc)
 
 ## Features:
 - A simple, responsive ticketing system UI/UX. 
